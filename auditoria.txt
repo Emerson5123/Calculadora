@@ -1,0 +1,14 @@
+=== REPORTE DE AUDITORÍA DE PRUEBAS ===
+
+Prueba 1 [Caso Normal (20% desc)]: Entrada(Precio: 100, Desc: 20%) -> RESULTADO: $80.0
+Prueba 2 [Caso Especial R5 (80% desc + 5% adicional)]: Entrada(Precio: 100, Desc: 80%) -> RESULTADO: $19.0
+Prueba 3 [Caso Especial R5 (90% desc + 5% adicional)]: Entrada(Precio: 50, Desc: 90%) -> RESULTADO: $4.75
+Prueba 4 [Error R2 (Precio negativo)]: Entrada(Precio: -10, Desc: 15%) -> ERROR CAPTURADO: El precio original debe ser un valor positivo.
+Prueba 5 [Error R1 (Descuento mayor a 100)]: Entrada(Precio: 100, Desc: 120%) -> ERROR CAPTURADO: El descuento debe estar entre 0 y 100.
+Prueba 6 [Error R1 (Descuento negativo)]: Entrada(Precio: 100, Desc: -5%) -> ERROR CAPTURADO: El descuento debe estar entre 0 y 100.
+ENTRADA -> Precio: 60.0, Descuento: 15.0% | RESULTADO: $51.0
+ENTRADA -> Precio: 100.0, Descuento: 10.0% | RESULTADO: $90.0
+ENTRADA -> Precio: 100.0, Descuento: 80.0% | RESULTADO: $19.0
+ENTRADA -> Precio: 100.0, Descuento: 90.0% | RESULTADO: $9.5
+ENTRADA -> Precio: -5.0, Descuento: 5.0% | ERROR: El precio original debe ser un valor positivo.
+ENTRADA -> Precio: 5.0, Descuento: -1.0% | ERROR: El descuento debe estar entre 0 y 100.
